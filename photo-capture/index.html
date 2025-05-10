@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsSign - Plataforma de Assinatura Digital</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="../common/Logo-sign.svg" alt="Logo LetsSign"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Processo de Assinatura -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Processo de Assinatura Digital</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="photo-container text-center">
+                        <h5 class="mb-3">Tire uma foto para validação da sua identidade</h5>
+                        
+                        <div class="photo-area mb-3">
+                            <div class="photo-placeholder" id="photoPlaceholder">
+                                <i class="fas fa-user camera-icon"></i>
+                            </div>
+                            <video id="videoElement" autoplay></video>
+                            <img id="capturedPhoto" alt="Foto capturada">
+                            <button id="cameraBtn" class="btn btn-primary" style="display: none;">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        
+                        <button id="startCameraBtn" class="btn btn-primary mb-3">Tirar foto</button>
+                        <button id="retakePhotoBtn" class="btn btn-outline-primary mb-3" style="display: none;">Nova foto</button>
+                        <button id="continueBtn" class="btn btn-success mb-3" style="display: none;">Continuar</button>
+                    </div>
+                    
+                    <div class="photo-instructions mt-4">
+                        <h5 class="mb-3">Dicas para uma foto de qualidade para identificação Facial:</h5>
+                        <ol>
+                            <li>Boa iluminação;</li>
+                            <li>Fundo neutro;</li>
+                            <li>Centralização e enquadramento;</li>
+                            <li>Expressão neutra;</li>
+                            <li>Rosto visível;</li>
+                            <li>Sem reflexos ou filtros;</li>
+                            <li>Cabelos e rosto visíveis.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Recursos da nossa plataforma</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h5 class="card-title">Segurança Avançada</h5>
+                            <p class="card-text">Reconhecimento facial e validação de documentos para máxima segurança nas assinaturas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h5 class="card-title">Assinatura Digital</h5>
+                            <p class="card-text">Assine documentos digitalmente com validade jurídica, seguindo as normas da ICP-Brasil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card feature-card shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h5 class="card-title">Economia de Tempo</h5>
+                            <p class="card-text">Agilize seus processos com assinaturas digitais que levam apenas minutos para serem concluídas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>LetsSign</h5>
+                    <p>Sua plataforma completa para assinatura digital com validade jurídica e segurança avançada.</p>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Início</a></li>
+                        <li><a href="#" class="text-white">Recursos</a></li>
+                        <li><a href="#" class="text-white">Preços</a></li>
+                        <li><a href="#" class="text-white">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> contato@letssign.com.br</li>
+                        <li><i class="fas fa-phone me-2"></i> (11) 4002-8922</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 LetsSign. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

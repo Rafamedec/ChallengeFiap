@@ -1,0 +1,59 @@
+:root {
+            --primary-color: #6c5ce7;
+            --primary-light: #a29bfe;
+            --secondary-color: #2d3436;
+            --light-bg: #f8f9fa;
+            --success-color: #8e44ad;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #383577;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .success-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 50px 30px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .check-icon {
+            color: #2ecc71;
+            margin-left: 5px;
+            font-size: 1.2rem;
+        }
+        
+        .success-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--success-color);
+            margin-bottom: 25px;
+        }
+        
+        .message-primary {
+            font-size: 1.5rem;
+            color: #383577;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .message-secondary {
+            font-size: 1.1rem;
+            color: #383577;
+            margin-bottom: 30px;
+        }
